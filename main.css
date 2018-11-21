@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Prosto+One');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 @font-face {
-  font-family: 'Prosto One', cursive;
+  font-family: 'Oswald', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
 body{
-  font-family: Tahoma;
+  font-family: 'Oswald',sans-serif;
+  font-size:20px;
 }
 
 #title{
-  text-align: center;
-  font-family: "Prosto One";
+  font-family: "Oswald";
+  font-size: 75px;
 }
 
 textarea{
@@ -26,6 +33,7 @@ h1{
 }
 
 h2{
+
   font-variant:small-caps;
   text-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   font-size:200%;
@@ -43,7 +51,7 @@ a{
   color:orange;
 }
 a:hover{
-    text-shadow: 5px 2px 4px rgba(0,0,0,.1);
+  color:yellow;
 }
 
 <!--Transparent Cards-->

@@ -7,125 +7,98 @@
   box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-body{
-  //background-color:hsla(255, 100%, 16%, 1);
-  background-size: cover;
+.body_img_left{
+    float:left;
+    margin-right:20px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid black;
 }
 
-#title{
-    margin:2.5%;
-    width:95%;
-    color:white;
-
-}
-
-#content{
-  margin-left:10%;
-  background-color:hsla(255, 100%, 40%, 1);
-  width:80%;
+#header{
+  top:0;
+  width:95%;
+  margin-left:2.5%;
+  background-color: black;
+  position: fixed;
+  text-align: right;
   box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-#info_section{
-  background-color:hsla(255, 100%, 90%, 1);
-  padding-left: 5px;
-  padding-bottom:0.1%;
+#nav-bar{
+  font-size: 25px;
   padding-right: 5px;
-  font-style: italic;
+    color:orange;
 }
 
-label{
-  color:white;
+#title_section{
+    margin-top:50px;
+    margin-left:5%;
+    width:90%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    border:1px solid black;
+    box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
 }
 
-
-.form_section{
-  padding-top: 5px;
+#maintext{
+  margin-left:10%;
+  background-color: rgba(0,0,0,.1);
+  width:80%;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-bottom: 5px;
-  background-color:hslahsla(255, 100%, 75%, 1);
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: repeat(8, auto);
-  grid-gap:5px;
-  grid-template-areas:
-  "label1 input1"
-  "label2 input2"
-  "label3 input3"
-  "label4 input4"
-  "label5 input5"
-  "label6 input6"
-  "commentlab comment"
-  "footer footer";
-}
-
-.name-label{
-  text-align: right;
-  grid-area:label1;
-}
-
-.name{
-  grid-area:input1;
-}
-
-.email-label{
-  text-align: right;
-  grid-area:label2;
-}
-
-.email{
-  grid-area:input2;
-}
-
-.number-label{
-  text-align: right;
-  grid-area:label3;
-}
-
-.number{
-  grid-area:input3;
-}
-
-.dropdown-label{
-  text-align: right;
-  grid-area:label4;
-}
-
-.dropdown{
-  grid-area:input4;
-}
-
-.work-label{
-  text-align: right;
-  grid-area:label5;
-}
-
-.work-pattern{
-  grid-area:input5;
-}
-
-.improvement-label{
-  text-align: right;
-  grid-area:label6;
-}
-
-.improvement-area{
-  grid-area:input6;
-}
-
-.comment-label{
-  text-align: right;
-  grid-area:commentlab;
-}
-
-.comments{
-  grid-area:comment;
-}
-
-.submit{
-  justify-self: center;
-  grid-area: footer;
+  border:1px solid black;
+  box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 input[type=submit] {
     width: 20em;  height: 2em;
+}
+
+#form{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10px;
+  text-align: center;
+}
+#boxcontainer{
+      display:flex;
+      justify-content:space-between;
+}
+
+#thumbnail{
+  background-color:rgba(200,200,200,.95);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.fullCard{
+  border-radius:5px;
+  padding-left: 2px;
+  padding-right:2px;
+}
+
+.cardText{
+  background-color:rgba(200,200,200,.95);
+  font-style: italic;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.cardContent{
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  background-color:rgba(200,200,200,.95);
+}
+
+.testimonial{
+  border:2px solid black;
+  //rgba(200,200,200,.95);
+  width:80%;
+  margin:2px;
+  text-align: center;
 }

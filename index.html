@@ -1,15 +1,20 @@
 <html>
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="ProductPage.css">
-<title>Robert Worth - FCC Responsive Web Design - Product Landing Page</title>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="ProductPage.css">
+  <title>Robert Worth - FCC Responsive Web Design - Product Landing Page</title>
+</head>
 
 <header id="header">
+  <img id="header-img" class="body_img_left" src="RW_Jigweb_Logo.png" height="100px" alt="RW JigWeb Logo">
   <nav id="nav-bar">
-    <a href="#About" class="nav-link">About<a>
-    <a href="#About" class="nav-link">Products<a>
-    <a href="#About" class="nav-link">Testimonials<a>
+    <a href="#main" class="nav-link">About</a> |
+    <a href="#Products" class="nav-link">Products</a> |
+    <a href="#Testimonials" class="nav-link">Testimonials</a> |
+    <a href="#form" class="nav-link">Register</a>
   </nav>
-  <img id="header-img" src="RW_Jigweb_Logo.png" height="200px" alt="RW JigWeb Logo">
+
 </header>
 
 <body>
@@ -20,7 +25,65 @@
 
   <div id="main">
     <div id="title_section">
-      <p><h1 id="title">RW JigWeb</h1></p>
+      <p><!--<br /><br /><br /><br />--><h1 id="title">RW JigWeb</h1>
+        <h2>Web Development | Product Portfolio | Photography</h2></p>
+    </div>
+
+    <div id="maintext">
+      <div id="About">
+        <p>RW JigWeb is a home-based photography and web design studio dedicated to making life easier for small businesses to get high quality product photographs and bespoke websites built and hosted. We offer a number of services inlcluding:</p>
+      </div>
+
+      <div id="Products">
+        <ul>
+          <li>Product Digital Portfolio</li> - you provide the product, we provide the digitial portfolio for you to use as you wish
+          <li>Product Website</li> - you provide the images, we provide the website
+          <li>Product Portfolio & Website</li> - you provide the product, we provide the digital portfolio and the website
+        </ul>
+      </div>
+
+      <div id="videosection" align="center">
+                <iframe id="video" width="640" height="480" src="https://www.youtube.com/embed/v8kFT4I31es" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div id="Testimonials">
+          <p>Below are some testimonials from satisfied customers</p>
+          <div id="boxcontainer">
+            <section id="thumbnail" class="fullCard testimonial">
+              <div class="cardContent">
+                <h2>Testimonial 1</h2>
+              </div>
+              <div class="cardText">
+                <p>"RW WebJig provided me with a world class website and product portfolio. I can confidently state that the upturn in sales we received was directly due to the proefessional look and feel of the end product" - F.Bloggs, ACME inc.</p>
+              </div>
+            </section>
+
+            <section id="thumbnail" class="fullCard testimonial">
+              <div class="cardContent">
+                <h2>Testimonial 3</h2>
+              </div>
+              <div class="cardText">
+
+              </div>
+            </section>
+
+            <section id="thumbnail" class="fullCard testimonial">
+              <div class="cardContent">
+                <h2>Testimonial 3</h2>
+              </div>
+              <div class="cardText">
+
+              </div>
+            </section>
+          </div>
+      </div>
     </div>
   </div>
+  <footer>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label for="email">Enter Email Address:</label>
+      <input id="email" name="email" type="email" placeholder="example@email.com">
+      <input id="submit" type="submit">
+    </form>
+  <footer>
 </body>
